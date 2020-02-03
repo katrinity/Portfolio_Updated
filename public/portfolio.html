@@ -4,12 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First Homework</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <title>Updated Portfolio 2</title>
 </head>
 
-<body>
+<!-- <body>
   <header>
     <div class="headerContainer">
       <div class="header">
@@ -21,8 +36,75 @@
         <a href="contact.html">Contact</a>
       </nav>
     </div>
-  </header>
-  <div class="container">
+  </header> -->
+
+<body>
+
+  <nav class="d-flex navbar navbar-expand-lg pt-4 navbar-dark bg-dark">
+    <a class="navbar-brand pl-3" href="index.html">Katia Inshakova</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link " href="index.html">About</a>
+        <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-item nav-link" href="contact.html">Contact</a>
+        <a class="nav-item nav-link" href="" onClick="window.open('resume.pdf')">Resume</a>
+      </div>
+  </nav>
+
+  <div class="container text-center pb-5">
+
+    <div class="container-grid d-flex justify-content-center">
+      <div class="card port-cards" style="width: 18rem;">
+        <a href="#modal-01" title="">
+          <img class="card-img-top" src="images/psychic.jpg" alt="Psychic-Game">
+          <div class="card-body">
+            <p class="card-text"><a href="https://katrinity.github.io/Psychic-Game/">Psychic-Game</a></p>
+          </div>
+      </div>
+      <div class="card port-cards" style="width: 18rem;">
+        <img class="card-img-top" src="images/cristal.jpg" alt="CrystalsCollector">
+        <div class="card-body">
+          <p class="card-text"><a href="https://katrinity.github.io/unit-4-game/">CrystalsCollector.</a></p>
+        </div>
+      </div>
+      <div class="card port-cards" style="width: 18rem;">
+        <img class="card-img-top" src="images/KLMS.jpg" alt="K.L.M.S. Travel">
+        <div class="card-body">
+          <p class="card-text"><a href="https://github.com/katrinity/Travel_X">K.L.M.S. Travel</a></p>
+        </div>
+      </div>
+      <div class="card port-cards" style="width: 18rem;">
+        <img class="card-img-top" src="images/train1.jpg" alt="Train-Scheduler">
+        <div class="card-body">
+          <p class="card-text"><a href="https://katrinity.github.io/Train-Scheduler/">Train-Scheduler.</a></p>
+        </div>
+      </div>
+      <div class="card port-cards" style="width: 18rem;">
+        <img class="card-img-top" src="images/gif.jpg" alt="GifTastic">
+        <div class="card-body">
+          <p class="card-text"><a href="https://katrinity.github.io/GifTastic/">GifTastic</a></p>
+        </div>
+      </div>
+      <div class="card port-cards" style="width: 18rem;">
+        <img class="card-img-top" src="" alt="Bamazon">
+        <div class="card-body">
+          <p class="card-text"><a href="">Bamazon.</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  <!-- <div class="container">
     <header>
       <h2>Portfolio</h2>
     </header>
@@ -59,12 +141,40 @@
             <p class="pp">Rock Paper Scissors</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
+  <div class="card fixed-bottom mt-5 pt-3.5 bg-dark">
+    <div class="card-header text-center">
+      <ul class="list-inline mb-0  ">
+        <li class="list-inline-item">
+          <a class="btn btn-outline-dark btn-social text-center rounded-circle bg-light" href="">
+            <i class="fa fa-fw fa-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn btn-outline-dark btn-social text-center rounded-circle bg-light" href="">
+            <i class="fa fa-fw fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn btn-outline-dark btn-social text-center rounded-circle bg-light" href="">
+            <i class="fa fa-fw fa-instagram"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn btn-outline-dark btn-social text-center rounded-circle bg-light" href="">
+            <i class="fa fa-fw fa-pinterest"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn btn-outline-dark btn-social text-center rounded-circle bg-light"
+            href="https://github.com/katrinity">
+            <i class="fa fa-fw fa-github"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
-  <footer></footer>
-
 </body>
 
 </html>

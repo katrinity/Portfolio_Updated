@@ -4,45 +4,130 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>First Homework</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+                integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+                crossorigin="anonymous">
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+        <title>Updated Portfolio 2</title>
 </head>
 
 <body>
-        <header>
-                <div class="headerContainer">
-                        <div class="header">
-                                Katia Inshakova
+
+        <nav class="d-flex navbar navbar-expand-lg navbar-dark pt-4  bg-dark">
+                <a class="navbar-brand pl-3" href="index.html">Katia Inshakova</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                                <a class="nav-item nav-link " href="index.html">About</a>
+                                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                                <a class="nav-item nav-link" href="contact.html">Contact</a>
+                                <a class="nav-item nav-link" href="" onClick="window.open('resume.pdf')">Resume</a>
                         </div>
-                        <nav class="topnav">
-                                <a href="index.html">About</a>
-                                <a href="portfolio.html">Portfolio</a>
-                                <a href="contact.html">Contact</a>
-                        </nav>
+        </nav>
+
+        <div class="wrapper">
+
+
+                <p>Please do not hesitate to reach out if you have any questions.</p>
+
+                <div class="share">
+
+                        <button class="bg-dark"><a href="https://github.com/katrinity"><i
+                                                class="fa fa-fw fa-github"></i> GitHub</a></button>
+                        <button class="bg-dark"><a href=""><i class="fa fa-fw fa-linkedin "></i> LinkedIn</a></button>
+                        <button class="bg-dark"><a href="mailto:katrinity@yahoo.com"><i
+                                                class="fa fa-fw fa-envelope "></i> Email</a></button>
                 </div>
-        </header>
+        </div>
 
-        <div class="container">
-                <header>
-                        <h2>Contact</h2>
-                </header>
-                <hr>
-                <div class="clearfix">
-                        <form action="/action_page.php">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="John Smith">
 
-                                <label for="email">Email</label>
-                                <input type="text" id="email" name="email" placeholder="Example@gmail.com">
-
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message"></textarea>
-                                <input type="submit" value="Submit">
-                        </form>
+        <div class="contact-form">
+                <div class="form-group ">
+                        <label class="control-label col-sm-2" for="name">Name:</label>
+                        <div class="col-sm-12">
+                                <input type="text" class="form-control" id="name" placeholder="" name="name">
+                        </div>
                 </div>
+                <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" placeholder="" name="email">
+                        </div>
+                </div>
+                <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Subject:</label>
+                        <div class="col-sm-12">
+                                <input type="subject" class="form-control" id="subject" placeholder="" name="subject">
+                        </div>
+                </div>
+                <div class="form-group">
+                        <label class="control-label col-sm-2" for="message">Message:</label>
+                        <div class="col-sm-12">
+                                <textarea class="form-control" rows="3" id="message"></textarea>
+                        </div>
+                </div>
+                <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-12">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                </div>
+        </div>
 
-                <footer></footer>
+
+        <div class="card fixed-bottom mt-5 pt-3.5 bg-dark">
+                <div class="card-header text-center">
+                        <ul class="list-inline mb-0  ">
+                                <li class="list-inline-item">
+                                        <a class="btn btn-outline-dark btn-social text-center rounded-circle bg-light"
+                                                href="">
+                                                <i class="fa fa-fw fa-facebook"></i>
+                                        </a>
+                                </li>
+                                <li class="list-inline-item">
+                                        <a class="btn btn-outline-dark btn-social text-center rounded-circle bg-light"
+                                                href="">
+                                                <i class="fa fa-fw fa-linkedin"></i>
+                                        </a>
+                                </li>
+                                <li class="list-inline-item">
+                                        <a class="btn btn-outline-dark btn-social text-center rounded-circle bg-light"
+                                                href="">
+                                                <i class="fa fa-fw fa-instagram"></i>
+                                        </a>
+                                </li>
+                                <li class="list-inline-item">
+                                        <a class="btn btn-outline-dark btn-social text-center rounded-circle bg-light"
+                                                href="">
+                                                <i class="fa fa-fw fa-pinterest"></i>
+                                        </a>
+                                </li>
+                                <li class="list-inline-item">
+                                        <a class="btn btn-outline-dark btn-social text-center rounded-circle bg-light"
+                                                href="https://github.com/katrinity">
+                                                <i class="fa fa-fw fa-github"></i>
+                                        </a>
+                                </li>
+                        </ul>
+                </div>
         </div>
 </body>
 
