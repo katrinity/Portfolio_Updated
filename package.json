@@ -12,9 +12,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
-    "mysql": "^2.18.1",
     "node": "^13.7.0",
-    "node.js": "0.0.0",
     "path": "^0.12.7"
   },
   "description": "In this homework I added three types of '@media screen' tags to my CSS page and the 'viewpont' tag to all html pages.",
